@@ -1,0 +1,21 @@
+name: Beagle Security Test
+on:
+  push:
+    branches: 
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Beagle Security Test
+      uses: beaglesecurity/beagle-github-action@1.0.0
+      env: 
+          access_token: ${{secrets.beagle_access_token}}
+          application_token: ${{secrets.beagle_application_token}}
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
