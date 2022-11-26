@@ -1,4 +1,8 @@
 # Starter pipeline
+- task: BeagleSecurityTask@0
+  inputs:
+    accesskey: '08cupihxg58grpaegu9wayik1hgzn1l1'
+    applicationkey: 'kxeb8h8x3gbgvfu4k1mh7rhz90bugatz'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
